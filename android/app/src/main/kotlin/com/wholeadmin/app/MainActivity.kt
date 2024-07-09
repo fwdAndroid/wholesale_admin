@@ -1,4 +1,4 @@
-package com.example.wholesale_admin
+package com.wholeadmin.app
 
 import io.flutter.embedding.android.FlutterActivity
 
