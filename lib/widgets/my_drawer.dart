@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wholesale_admin/screen/drawer_pages/brands/brands.dart';
+import 'package:wholesale_admin/screen/drawer_pages/product/products.dart';
 import 'package:wholesale_admin/screen/drawer_pages/promotions/promostions.dart';
 import 'package:wholesale_admin/utils/colors.dart';
 
@@ -40,6 +41,9 @@ class _MyDrawerState extends State<MyDrawer> {
               size: 12,
             ),
           ),
+          Divider(
+            color: primary.withOpacity(.5),
+          ),
           ListTile(
             onTap: () {
               Navigator.push(
@@ -48,6 +52,26 @@ class _MyDrawerState extends State<MyDrawer> {
             leading: Icon(Icons.branding_watermark_sharp),
             title: Text(
               "Brands",
+              style: TextStyle(
+                  color: black, fontWeight: FontWeight.w300, fontSize: 12),
+            ),
+            trailing: Icon(
+              Icons.arrow_forward_ios,
+              color: black,
+              size: 12,
+            ),
+          ),
+          Divider(
+            color: primary.withOpacity(.5),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (builder) => Products()));
+            },
+            leading: Icon(Icons.insert_drive_file),
+            title: Text(
+              "Products",
               style: TextStyle(
                   color: black, fontWeight: FontWeight.w300, fontSize: 12),
             ),
