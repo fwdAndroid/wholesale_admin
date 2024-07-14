@@ -40,7 +40,7 @@ class _ProductsState extends State<Products> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
-              height: 200,
+              height: 500,
               width: MediaQuery.of(context).size.width,
               child: StreamBuilder(
                   stream: FirebaseFirestore.instance
